@@ -1,0 +1,105 @@
+:root {
+  --color-primary: #123c69;
+  --color-secondary: #fff;
+  --color-tetrinary: #c0c0c0;
+  --color-quarterly: #f0f0f0;
+  --font-raleway: "Raleway", Arial, Helvetica, sans-serif;
+  --font-lato: "Lato", Arial, Helvetica, sans-serif;
+}
+html {
+  margin: 0;
+}
+body {
+  margin: 0;
+  height: 300vh;
+  background: url(Images/Backgrounds/Hexagon\(375.svg);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-raleway);
+}
+/* NavBar */
+.navbar {
+  background: var(--color-secondary);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+}
+.logo {
+  width: 1.5rem;
+  height: auto;
+}
+.nav__list {
+  margin: 0;
+  padding: 0;
+}
+.nav__list li {
+  display: inline;
+  color: var(--color-primary);
+  margin-right: 2rem;
+}
+.nav__list a {
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  font-family: var(--font-raleway);
+  font-weight: 600;
+  text-decoration: none;
+}
+/* Hero */
+.hero {
+  width: 100vw;
+  height: 50vh;
+  background: url(Images/Backgrounds/Simple\ Shiny\(375.svg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.hero__heading {
+  color: var(--color-quarterly);
+  font-family: var(--font-raleway);
+  font-weight: 300;
+  text-shadow: var(--color-tetrinary) 0 0 4px;
+}
+.hero__subtext {
+  color: var(--color-tetrinary);
+  font-family: var(--font-lato);
+}
+/* Crypto Chart */
+.cryptoChart {
+  width: 100vw;
+  height: 50vh;
+  display: none;
+}
+/* About Us */
+.about_us {
+  background: url(Images/Backgrounds/Wave\(375.svg);
+  width: 100vw;
+  height: 50vh;
+  text-align: center;
+  color: var(--color-tetrinary);
+  font-family: var(--font-lato);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about_us h2 {
+  color: var(--color-quarterly);
+  font-family: var(--font-raleway);
+}
+.about_us p {
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: black;
+}
