@@ -22,7 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-raleway);
+  font-family: var(--font-raleway) !important;
 }
 .site_wrapper {
   height: 400vh;
@@ -163,6 +163,16 @@ h6 {
   padding: 1.5rem;
   text-align: justify;
 }
+.card_bottom a img {
+  width: 4rem;
+  height: 4rem;
+  padding-left: 1rem;
+}
+.link_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
 /* Contact Us */
 .contact_us {
   display: flex;
@@ -205,4 +215,53 @@ h6 {
   background: var(--color-primary);
   border-color: var(--color-primary);
   width: 27rem;
+}
+/* Footer */
+footer {
+  background: url(images/Backgrounds/Stacked\ Wave.svg);
+  height: 30rem;
+  width: 100%;
+  text-align: justify;
+}
+footer a {
+  color: var(--color-primary);
+}
+
+/* Responsive */
+@media screen and (min-width: 280px) {
+  .navbar a {
+    font-size: 0.9rem;
+  }
+  .nav__list li {
+    margin-right: 1.5rem;
+  }
+  .site_wrapper {
+    align-items: center;
+    height: 500vh;
+  }
+  body {
+    height: 578.5vh;
+  }
+  .about_us {
+    height: 450vh;
+    transform: scale(0.75);
+  }
+  .cards {
+    height: 450vh;
+    transform: scale(0.9);
+  }
+  .contact_us {
+    transform: scale(0.85);
+  }
+  footer {
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+    padding-left: 0.4rem;
+  }
+  footer h4 {
+    font-size: 1.8rem;
+    color: var(--color-quarterly);
+  }
+}
+@media screen and (min-width: 360px) {
 }
