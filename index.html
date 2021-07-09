@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Raleway:ital,wght@0,300;0,400;0,600;1,700&display=swap" rel="stylesheet">
@@ -18,7 +20,7 @@
     <ul class="nav__list">
         <li><a href="index.html">Home</a></li>
         <li><a href="#about_us">About Us</a></li>
-        <li><a href="">Contact Us</a></li>
+        <li><a href="#contact_us">Contact Us</a></li>
     </ul>
 </nav>
 <div class="section_wrapper">
@@ -32,75 +34,93 @@
     <div id="coinmarketcap-widget-marquee" coins="1,1027,1839,52,2010,74" currency="USD"
     theme="light" transparent="false" show-symbol-logo="true"></div>
 </div>
-<!-- TradingView Widget BEGIN -->
-<section class="cryptoChart">
-    <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener" target="_blank"><span class="blue-text">Cryptocurrency Markets</span></a> by TradingView</div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
-        {
-        "width": "100%",
-        "height": "100%",
-        "defaultColumn": "overview",
-        "screener_type": "crypto_mkt",
-        "displayCurrency": "USD",
-        "colorTheme": "light",
-        "locale": "en"
-      }
-        </script>
-      </div>
-</section>
-  <!-- TradingView Widget END -->
-<section class="about_us" id="about_us">
-    <div class="about_us_text">
-        <h2>Our Mission</h2>
-        <p class="abt_us_paragraph">Freedom Finance Georgia is a limited company which serves the mission of spreading and elevating the level of financial literacy in Georgian teenagers, at Freedom Finance we believe that strong financial education will result in generating the ability of making more well-informed and rational decisions about personal finance, investments, budgeting, lending and borrowing, we believe that strong financial literacy can put you far ahead in life.
-            At Freedom Finance, we strive to provide quality information and education and help the teenagers who are about to step into real life attain financial literacy to make more informed decisions about their finance.
-            Our company was founded by two teenagers who were given the opportunity to study in England and now are motivated to share and give back to the Georgian community.
-        </p>
-    </div>
-    <div class="cards">
-        <h2>Meet The Team</h2>
-        <div class="card">
-            <img src="Images/1200px-Solid_green.svg.png" alt="" class="card_img">
-            
+<div class="site_wrapper">
+    <!-- TradingView Widget BEGIN -->
+    <section class="cryptoChart">
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener" target="_blank"><span class="blue-text">Cryptocurrency Markets</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+            {
+            "width": "100%",
+            "height": "100%",
+            "defaultColumn": "overview",
+            "screener_type": "crypto_mkt",
+            "displayCurrency": "USD",
+            "colorTheme": "light",
+            "locale": "en"
+          }
+            </script>
+          </div>
+    </section>
+      <!-- TradingView Widget END -->
+    <section class="about_us" id="about_us">
+        <div class="about_us_text">
+            <h2>Our Mission</h2>
+            <p class="abt_us_paragraph">Freedom Finance Georgia is a limited company which serves the mission of spreading and elevating the level of financial literacy in Georgian teenagers, at Freedom Finance we believe that strong financial education will result in generating the ability of making more well-informed and rational decisions about personal finance, investments, budgeting, lending and borrowing, we believe that strong financial literacy can put you far ahead in life.
+                At Freedom Finance, we strive to provide quality information and education and help the teenagers who are about to step into real life attain financial literacy to make more informed decisions about their finance.
+                Our company was founded by two teenagers who were given the opportunity to study in England and now are motivated to share and give back to the Georgian community.
+            </p>
+        </div>
+        <div class="cards">
+            <h2>Meet The Team</h2>
+            <div class="card">
+                <img src="Images/1200px-Solid_green.svg.png" alt="" class="card_img">
+    
+                    <div class="card_top">
+                        Vakhtang Vepkhvadze (CEO)
+                    </div>
+                    <div class="card_bottom">
+                        <p>Vakhtang is a passionate executive, he is a true believer in the power of financial literacy,
+                            at the age of 16, he managed to win a full scholarship to study Economics, Business and Mathematics in the UK, getting top scores in all three of them, he is also a 2-time national debating champion for England and has already had several experiences working in the financial sector.
+                            During his time in the UK he became a Cryptocurrency enthusiast and is currently a Cryptocurrency
+                             fund advisor, he is passionate and always strives towards growth.
+                        </p>
+                    </div>
+            </div>
+            <div class="card">
+                <img src="Images/1200px-Solid_green.svg.png" alt="" class="card_img">
                 <div class="card_top">
-                    Vakhtang Vepkhvadze (CEO)
+                    Aleksandre Kapanadze (CTO)
                 </div>
                 <div class="card_bottom">
-                    <p>Vakhtang is a passionate executive, he is a true believer in the power of financial literacy,
-                        at the age of 16, he managed to win a full scholarship to study Economics, Business and Mathematics in the UK, getting top scores in all three of them, he is also a 2-time national debating champion for England and has already had several experiences working in the financial sector.
-                        During his time in the UK he became a Cryptocurrency enthusiast and is currently a Cryptocurrency
-                         fund advisor, he is passionate and always strives towards growth.
+                    <p>Aleksandre has been a tech enthusiast from an early age. He made his first game at the age of 12 and is a self-taught programmer, being fluent in C#, HTML and CSS. Aleksandre, like our CEO, also won a full scholarship in the UK to study Computer science, Further mathematics, Mathematics and Economics, showcasing his talents
+                         in all four of them and scoring top results, Aleksandre is always learning, grow
+                         ing and looking for opportunities to become the best version of himself.
+                        </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/1200px-Solid_green.svg.png" alt="" class="card_img">
+                <div class="card_top">
+                    David Vepkhvadze (CFO)
+                </div>
+                <div class="card_bottom">
+                    <p>
+                        David is the most experienced member of the team, having studied Economics in England, he pursued to get a bachelor’s degree in international economics and finance at Bocconi University, he has work experience at big financial
+                        organizations such as the National bank of Georgia, TBC Capitals and EY.
+                        David is a visionary and an upcoming talent in the world of finance.
                     </p>
                 </div>
-        </div>
-        <div class="card">
-            <img src="Images/1200px-Solid_green.svg.png" alt="" class="card_img">
-            <div class="card_top">
-                Aleksandre Kapanadze (CTO)
-            </div>
-            <div class="card_bottom">
-                <p>Aleksandre has been a tech enthusiast from an early age. He made his first game at the age of 12 and is a self-taught programmer, being fluent in C#, HTML and CSS. Aleksandre, like our CEO, also won a full scholarship in the UK to study Computer science, Further mathematics, Mathematics and Economics, showcasing his talents
-                     in all four of them and scoring top results, Aleksandre is always learning, grow
-                     ing and looking for opportunities to become the best version of himself.
-                    </p>
             </div>
         </div>
-        <div class="card">
-            <img src="Images/1200px-Solid_green.svg.png" alt="" class="card_img">
-            <div class="card_top">
-                David Vepkhvadze (CFO)
-            </div>
-            <div class="card_bottom">
-                <p>
-                    David is the most experienced member of the team, having studied Economics in England, he pursued to get a bachelor’s degree in international economics and finance at Bocconi University, he has work experience at big financial
-                    organizations such as the National bank of Georgia, TBC Capitals and EY.
-                    David is a visionary and an upcoming talent in the world of finance.
-                </p>
-            </div>
+    </section>
+    <section class="contact_us" id="contact_us">
+        <h3>Contact Us</h3>
+        <form action="https://formspree.io/f/mzbyapkp" method="POST" class="contact_form">
+        <div class="group">
+            <label for="E-Mail">Enter your E-Mail address:</label>
+            <input type="email" name="E-Mail" id="E-Mail" placeholder="E-Mail" required>
         </div>
-    </div>
-</section>
+        <div class="group">
+            <label for="Message">Enter your message:</label>
+            <textarea name="Message" id="Message" cols="30" rows="20" placeholder="Your Message" required></textarea>
+        </div>
+        <div class="group flex-container-row">
+            <button type="submit">Submit</button>
+        </div>
+        </form>
+    </section>
+</div>
 </body>
 </html>

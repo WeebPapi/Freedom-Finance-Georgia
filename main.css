@@ -24,6 +24,12 @@ h5,
 h6 {
   font-family: var(--font-raleway);
 }
+.site_wrapper {
+  height: 400vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 /* NavBar */
 .navbar {
   background: var(--color-secondary);
@@ -36,6 +42,7 @@ h6 {
   position: fixed;
   top: 0;
   overflow: hidden;
+  z-index: 99;
 }
 .logo {
   width: 2.5rem;
@@ -89,7 +96,7 @@ h6 {
 /* About Us */
 .about_us {
   width: 100vw;
-  height: 250vh;
+  height: 300vh;
   text-align: center;
   color: grey;
   font-family: var(--font-lato);
@@ -122,7 +129,7 @@ h6 {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 200vh;
+  height: 250vh;
 }
 .card {
   width: 30rem;
@@ -155,4 +162,47 @@ h6 {
 .card_bottom p {
   padding: 1.5rem;
   text-align: justify;
+}
+/* Contact Us */
+.contact_us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 70vh;
+}
+.contact_us h3 {
+  background: white;
+}
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 30vh;
+  width: 27rem;
+  background: white;
+}
+.group {
+  display: inline-block;
+}
+.group label {
+  font-size: 1.2rem;
+  color: gray;
+  font-family: var(--font-lato);
+}
+.group #E-Mail {
+  width: 27rem;
+}
+.flex-container-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.group button {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  width: 27rem;
 }
