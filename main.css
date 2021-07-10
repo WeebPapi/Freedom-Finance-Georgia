@@ -35,6 +35,9 @@ h5,
 h6 {
   font-family: var(--font-raleway) !important;
 }
+.cards1 {
+  display: none;
+}
 .site_wrapper {
   height: 400vh;
   display: flex;
@@ -375,6 +378,9 @@ footer a {
     align-items: center;
     height: 250vh;
   }
+  .logo {
+    width: 3.5rem;
+  }
 }
 @media screen and (min-width: 768px) {
   .about_us_text {
@@ -405,5 +411,36 @@ footer a {
   }
   .hero__wrapper img {
     margin-bottom: 7rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .hero {
+    background: url(images/Backgrounds/Simple\ Shiny\(1024.svg);
+  }
+  .logo {
+    width: 4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about_us {
+    height: auto;
+  }
+
+  .cards {
+    display: none;
+  }
+  .cards1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    transform: scale(1);
+    width: 100vw;
+    height: auto;
+    margin-top: 10rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .hero {
+    background: url(images/Backgrounds/Simple\ Shiny\(1440.svg);
   }
 }
