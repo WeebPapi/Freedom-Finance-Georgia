@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 :root {
   --color-primary: #123c69;
   --color-secondary: #fff;
@@ -15,6 +18,14 @@ body {
   margin: 0;
   height: 500vh;
   background: url(Images/Backgrounds/Scattered-Forcefields.svg);
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -46,7 +57,9 @@ h6 {
 }
 .logo {
   width: 2.5rem;
+  padding-left: 0.5rem;
   height: auto;
+  padding-top: 0.5rem;
 }
 .nav__list {
   margin: 0;
@@ -66,9 +79,9 @@ h6 {
 }
 /* Hero */
 .hero {
-  width: 100vw;
+  width: 100%;
   height: 50vh;
-  background: url(Images/Backgrounds/Simple\ Shiny\(375.svg);
+  background: url(Images/Backgrounds/Simple\ Shiny\(400.svg);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -86,6 +99,16 @@ h6 {
   color: var(--color-tetrinary);
   font-family: var(--font-lato);
   font-size: 1.3rem;
+}
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero__wrapper img {
+  width: 10rem;
+  height: auto;
 }
 /* Crypto Chart */
 .cryptoChart {
@@ -180,6 +203,7 @@ h6 {
   justify-content: space-around;
   align-items: center;
   height: 70vh;
+  margin-bottom: 20rem;
 }
 .contact_us h3 {
   background: white;
@@ -219,7 +243,7 @@ h6 {
 /* Footer */
 footer {
   background: url(images/Backgrounds/Stacked\ Wave.svg);
-  height: 30rem;
+  height: 20rem;
   width: 100%;
   text-align: justify;
 }
@@ -264,4 +288,122 @@ footer a {
   }
 }
 @media screen and (min-width: 360px) {
+  .hero__wrapper img {
+    width: 8rem;
+  }
+  .about_us {
+    transform: scale(0.8);
+  }
+}
+@media screen and (min-width: 375px) {
+  .hero {
+    background: url(images/Backgrounds/Simple\ Shiny\(400.svg);
+  }
+  .about_us {
+    transform: scale(0.9);
+  }
+  .abt_us_paragraph {
+    font-size: 1.45rem;
+  }
+  .cards {
+    transform: scale(1);
+    justify-content: space-evenly;
+  }
+  .contact_us {
+    transform: scale(1);
+  }
+  .nav__list a {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 411px) {
+  .abt_us_paragraph {
+    font-size: 1.5rem;
+  }
+  .nav__list a {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 415px) {
+  .hero {
+    background: url(images/Backgrounds/Simple\ Shiny\(540.svg);
+  }
+}
+@media screen and (min-width: 500px) {
+  .abt_us_paragraph {
+    font-size: 1.8rem;
+    margin-bottom: 20rem;
+  }
+  .cards {
+    transform: scale(1.1);
+  }
+  .contact_form {
+    transform: scale(1.2);
+  }
+}
+@media screen and (min-width: 541px) {
+  .hero {
+    background: url(images/Backgrounds/Simple\ Shiny\(768.svg);
+  }
+  .hero__wrapper img,
+  .hero__wrapper .hero__heading,
+  .hero__wrapper .hero__subtext {
+    transform: scale(1.5);
+  }
+  .hero__wrapper img {
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (min-width: 720px) {
+  .about_us_text {
+    transform: scale(1.2);
+  }
+  #theh2 {
+    font-size: 2.5rem;
+  }
+  .hero__wrapper img,
+  .hero__wrapper .hero__heading,
+  .hero__wrapper .hero__subtext {
+    transform: scale(1.7);
+  }
+  .hero__wrapper img {
+    margin-bottom: 5rem;
+  }
+
+  .cards {
+    justify-content: space-between;
+    align-items: center;
+    height: 250vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about_us_text {
+    transform: scale(1.5);
+  }
+
+  .cards {
+    width: 100vw;
+    height: 200vh;
+    transform: scale(1.4);
+    margin-bottom: 40rem;
+    margin-top: 40rem;
+  }
+  footer {
+    margin-top: 20rem;
+    font-size: 2rem;
+  }
+  footer h4 {
+    font-size: 2.8rem;
+  }
+  .nav__list a {
+    font-size: 2rem;
+  }
+  .hero__wrapper img,
+  .hero__wrapper .hero__heading,
+  .hero__wrapper .hero__subtext {
+    transform: scale(2);
+  }
+  .hero__wrapper img {
+    margin-bottom: 7rem;
+  }
 }

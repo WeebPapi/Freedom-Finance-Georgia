@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Raleway:ital,wght@0,300;0,400;0,600;1,700&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
 </head>
 <body>
 <nav class="navbar">
-    <i><img class="logo" src="Images/logo(temporary).jpeg" alt="A logo of freedom finance georgia"></i>
+    <i><img class="logo" src="Images/SVG/logo only.svg" alt="A logo of freedom finance georgia"></i>
     <ul class="nav__list">
         <li><a href="index.html">Home</a></li>
         <li><a href="#contact_us">Blog</a></li>
@@ -26,7 +27,8 @@
 </nav>
 <div class="section_wrapper">
     <section class="hero">
-    <div class="hero__wrapper">
+    <div class="hero__wrapper" data-aos="fade-up">
+        <img src="images/SVG/logo only.svg" alt="Freedom Finance Georgia. Think Big.">
         <h1 class="hero__heading">Freedom Finance Georgia</h1>
         <p class="hero__subtext">Think Big</p>
     </div>
@@ -63,9 +65,9 @@
                 Our company was founded by two teenagers who were given the opportunity to study in England and now are motivated to share and give back to the Georgian community.
             </p>
         </div>
+        <h2 id="theh2">Meet The Team</h2>
         <div class="cards">
-            <h2>Meet The Team</h2>
-            <div class="card">
+            <div class="card" data-aos="fade-right">
                 <img src="Images/1200px-Solid_green.svg.png" alt="" class="card_img">
     
                     <div class="card_top">
@@ -80,7 +82,7 @@
                         <div class="link_container"><a target="_blank" href="https://www.linkedin.com/in/vakhtang-vepkhvadze-b1667b206"><img src="Images/SVG/linkedin.svg" alt="A link to Vakhtang's LinkedIn page"></a></div>
                     </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-left">
                 <img src="Images/1200px-Solid_green.svg.png" alt="" class="card_img">
                 <div class="card_top">
                     Aleksandre Kapanadze (CTO)
@@ -96,7 +98,7 @@
                         </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-right">
                 <img src="Images/1200px-Solid_green.svg.png" alt="" class="card_img">
                 <div class="card_top">
                     David Vepkhvadze (CFO)
@@ -112,7 +114,7 @@
             </div>
         </div>
     </section>
-    <section class="contact_us" id="contact_us">
+    <section class="contact_us" id="contact_us" data-aos="fade-down">
         <h3>Contact Us</h3>
         <form action="https://formspree.io/f/mzbyapkp" method="POST" class="contact_form">
         <div class="group">
@@ -128,11 +130,15 @@
         </div>
         </form>
     </section>
-    <footer>
-        <h4>Attributions</h4>
-        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-        <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-    </footer>
 </div>
+<footer>
+    <h4>Attributions</h4>
+    <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+</footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({offset: 300, duration: 1000});
+</script>
 </body>
 </html>
