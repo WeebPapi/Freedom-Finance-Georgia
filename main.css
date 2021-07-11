@@ -16,8 +16,9 @@ html {
 }
 body {
   margin: 0;
-  height: 500vh;
+  height: 700vh;
   background: url(Images/Backgrounds/Scattered-Forcefields.svg);
+  overflow: hidden;
 }
 html,
 body {
@@ -39,7 +40,7 @@ h6 {
   display: none;
 }
 .site_wrapper {
-  height: 400vh;
+  height: 700vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -275,6 +276,7 @@ footer a {
   }
   body {
     height: 578.5vh;
+    overflow: hidden;
   }
   .about_us {
     height: 450vh;
@@ -291,6 +293,7 @@ footer a {
     font-size: 1.2rem;
     color: var(--color-secondary);
     padding-left: 0.4rem;
+    margin-bottom: 30rem;
   }
   footer h4 {
     font-size: 1.8rem;
@@ -428,11 +431,7 @@ footer a {
     width: 4rem;
   }
 }
-@media screen and (min-width: 1024px) {
-  .about_us {
-    height: auto;
-  }
-
+@media screen and (min-width: 1000px) {
   .cards {
     display: none;
   }
@@ -445,6 +444,12 @@ footer a {
     height: auto;
     margin-top: 5rem;
   }
+}
+@media screen and (min-width: 1024px) {
+  .about_us {
+    height: auto;
+  }
+
   .about_us {
     margin-bottom: 10rem;
   }
@@ -458,10 +463,10 @@ footer a {
     margin: 0;
   }
   body {
-    height: 400vh;
+    height: 475vh;
   }
   .site_wrapper {
-    height: 400vh;
+    height: 475vh;
     justify-content: center;
   }
   .nav__list li {
