@@ -271,11 +271,12 @@ footer a {
     margin-right: 1.5rem;
   }
   .site_wrapper {
+    justify-content: flex-start;
     align-items: center;
-    height: 500vh;
+    height: 620vh;
   }
   body {
-    height: 578.5vh;
+    height: 620vh;
     overflow: hidden;
   }
   .about_us {
@@ -298,6 +299,10 @@ footer a {
   footer h4 {
     font-size: 1.8rem;
     color: var(--color-quarterly);
+  }
+  #theh2 {
+    margin-bottom: 0;
+    margin-top: 20rem;
   }
 }
 @media screen and (min-width: 360px) {
@@ -373,6 +378,7 @@ footer a {
   }
   #theh2 {
     font-size: 2.5rem;
+    margin-bottom: 20rem;
   }
   .hero__wrapper img,
   .hero__wrapper .hero__heading,
@@ -386,10 +392,19 @@ footer a {
   .cards {
     justify-content: space-between;
     align-items: center;
-    height: 250vh;
+    height: 275vh;
   }
   .logo {
     width: 3.5rem;
+  }
+  body {
+    height: 630vh;
+  }
+  .site_wrapper {
+    height: 630vh;
+  }
+  footer {
+    justify-self: flex-end;
   }
 }
 @media screen and (min-width: 768px) {
@@ -399,7 +414,6 @@ footer a {
 
   .cards {
     width: 100vw;
-    height: 200vh;
     transform: scale(1.4);
     margin-bottom: 40rem;
     margin-top: 40rem;
@@ -446,10 +460,13 @@ footer a {
   }
 }
 @media screen and (min-width: 1024px) {
+  .hero {
+    height: 75vh;
+  }
   .about_us {
     height: auto;
+    margin: 0;
   }
-
   .about_us {
     margin-bottom: 10rem;
   }
@@ -463,19 +480,61 @@ footer a {
     margin: 0;
   }
   body {
-    height: 475vh;
+    height: auto;
   }
   .site_wrapper {
-    height: 475vh;
-    justify-content: center;
+    height: 100%;
+    justify-content: space-around;
   }
   .nav__list li {
     margin-right: 2.5rem;
   }
 }
+@media screen and (min-width: 1024px) and (min-height: 768px) {
+  body {
+    height: 650vh;
+  }
+  .site_wrapper {
+    height: 650vh;
+  }
+  .hero__wrapper img,
+  .hero__wrapper .hero__heading,
+  .hero__wrapper .hero__subtext {
+    transform: scale(1.8);
+  }
+}
+footer,
+.contact_us {
+  margin-bottom: 40vh;
+}
+@media screen and (min-width: 1025px) and (min-height: 768px) {
+  body {
+    height: auto;
+  }
+  .site_wrapper {
+    height: auto;
+    margin-top: 20rem;
+  }
+  footer,
+  .contact_us {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1025px) {
   .hero {
     background: url(Images/Backgrounds/Simple\ Shiny\ 1440.svg);
-    height: 75vh;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    height: auto;
+  }
+  .site_wrapper {
+    height: auto;
+    margin-top: 20rem;
+  }
+  footer,
+  .contact_us {
+    margin-bottom: 0;
   }
 }
