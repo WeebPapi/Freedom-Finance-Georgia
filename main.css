@@ -43,6 +43,7 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  overflow: none;
 }
 /* NavBar */
 .navbar {
@@ -184,6 +185,12 @@ h6 {
   font-family: var(--font-lato);
   font-weight: 600;
   display: inline-block;
+}
+.bottom_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200%;
 }
 .card_bottom p {
   padding: 1.5rem;
@@ -367,7 +374,7 @@ footer a {
   .hero__wrapper img,
   .hero__wrapper .hero__heading,
   .hero__wrapper .hero__subtext {
-    transform: scale(1.7);
+    transform: scale(1.4);
   }
   .hero__wrapper img {
     margin-bottom: 5rem;
@@ -407,10 +414,10 @@ footer a {
   .hero__wrapper img,
   .hero__wrapper .hero__heading,
   .hero__wrapper .hero__subtext {
-    transform: scale(2);
+    transform: scale(1.4);
   }
   .hero__wrapper img {
-    margin-bottom: 7rem;
+    margin-bottom: 4rem;
   }
 }
 @media screen and (min-width: 769px) {
@@ -437,6 +444,28 @@ footer a {
     width: 100vw;
     height: auto;
     margin-top: 10rem;
+  }
+  .about_us {
+    margin-bottom: 10rem;
+  }
+  .contact_us {
+    margin: 0;
+  }
+  .contact_form {
+    transform: scale(1.5);
+  }
+  footer {
+    margin: 0;
+  }
+  body {
+    height: 400vh;
+  }
+  .site_wrapper {
+    height: 400vh;
+    justify-content: center;
+  }
+  .nav__list li {
+    margin-right: 2.5rem;
   }
 }
 @media screen and (min-width: 1025px) {
