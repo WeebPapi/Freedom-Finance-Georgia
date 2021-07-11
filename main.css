@@ -85,7 +85,7 @@ h6 {
 .hero {
   width: 100%;
   height: 50vh;
-  background: url(Images/Backgrounds/Simple\ Shiny\(400.svg);
+  background: url(Images/Backgrounds/Simple\ Shiny\ 375.svg);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -252,7 +252,7 @@ h6 {
 }
 /* Footer */
 footer {
-  background: url(images/Backgrounds/Stacked\ Wave.svg);
+  background: url(Images/Backgrounds/Stacked\ Wave.svg);
   height: 20rem;
   width: 100%;
   text-align: justify;
@@ -307,7 +307,7 @@ footer a {
 }
 @media screen and (min-width: 375px) {
   .hero {
-    background: url(images/Backgrounds/Simple\ Shiny\(400.svg);
+    background: url(Images/Backgrounds/Simple\ Shiny\ 400.svg);
   }
   .about_us {
     transform: scale(0.9);
@@ -336,7 +336,7 @@ footer a {
 }
 @media screen and (min-width: 415px) {
   .hero {
-    background: url(images/Backgrounds/Simple\ Shiny\(540.svg);
+    background: url(Images/Backgrounds/Simple\ Shiny\ 540.svg);
   }
 }
 @media screen and (min-width: 500px) {
@@ -353,7 +353,7 @@ footer a {
 }
 @media screen and (min-width: 541px) {
   .hero {
-    background: url(images/Backgrounds/Simple\ Shiny\(768.svg);
+    background: url(Images/Backgrounds/Simple\ Shiny\ 768.svg);
   }
   .hero__wrapper img,
   .hero__wrapper .hero__heading,
@@ -422,7 +422,7 @@ footer a {
 }
 @media screen and (min-width: 769px) {
   .hero {
-    background: url(Images/Backgrounds/Simple\ Shiny\(1024.svg);
+    background: url(Images/Backgrounds/Simple\ Shiny\ 1024.svg);
   }
   .logo {
     width: 4rem;
@@ -471,5 +471,6 @@ footer a {
 @media screen and (min-width: 1025px) {
   .hero {
     background: url(Images/Backgrounds/Simple\ Shiny\ 1440.svg);
+    height: 75vh;
   }
 }
