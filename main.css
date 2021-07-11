@@ -422,7 +422,7 @@ footer a {
 }
 @media screen and (min-width: 769px) {
   .hero {
-    background: url(images/Backgrounds/Simple\ Shiny\(1024.svg);
+    background: url(Images/Backgrounds/Simple\ Shiny\(1024.svg);
   }
   .logo {
     width: 4rem;
@@ -443,7 +443,7 @@ footer a {
     transform: scale(1);
     width: 100vw;
     height: auto;
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
   .about_us {
     margin-bottom: 10rem;
@@ -470,6 +470,6 @@ footer a {
 }
 @media screen and (min-width: 1025px) {
   .hero {
-    background: url(images/Backgrounds/Simple\ Shiny\(1440.svg);
+    background: url(Images/Backgrounds/Simple\ Shiny\(1440.svg);
   }
 }
